@@ -1,33 +1,44 @@
 ﻿@page
 @model IndexModel
-@inject frontend.Services.WeatherService WeatherService
+@inject Services.PeopleService PeopleService
 @{
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="btn-toolbar">
+    <a class="btn btn-light" asp-page="AddUser">Add</a>
 </div>
-
 <div>
     <table class="table">
         <thead>
-            <tr>
-                <th>
-                    Date
-                </th>
-                <th>Summary</th>
-            </tr>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>Name</th>
+        </tr>
         </thead>
         <tbody>
-            @foreach (var forecast in await WeatherService.GetForecast())
+
+        @{
+            var people = await PeopleService.GetPeople();
+        }
+        @if (people != null && people.Any())
+        {
+            foreach (var person in people)
             {
                 <tr>
-                    <td>@forecast.Date</td>
-                    <td>@forecast.Summary</td>
+                    <td>@person.Id</td>
+                    <td>@person.Name</td>
                 </tr>
             }
+        }
+        else
+        {
+            <tr>
+                <td colspan="2">No items.</td>
+            </tr>
+        }
         </tbody>
     </table>
 </div>

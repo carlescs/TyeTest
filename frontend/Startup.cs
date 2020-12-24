@@ -19,7 +19,7 @@ namespace frontend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddHttpClient<WeatherService>(configureClient=>{
+            services.AddHttpClient<PeopleService>(configureClient=>{
                 configureClient.BaseAddress=Configuration.GetServiceUri("api");
             });
             services.AddRazorPages();

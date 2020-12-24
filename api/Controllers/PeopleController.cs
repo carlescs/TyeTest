@@ -1,9 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using api.Model;
+using CommonContracts.People;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 
 namespace api.Controllers
 {
@@ -12,12 +11,10 @@ namespace api.Controllers
     public class PeopleController:ControllerBase
     {
         private readonly ApplicationDbContext _context;
-        private IConfiguration _configuration;
 
-        public PeopleController(ApplicationDbContext context, IConfiguration configuration)
+        public PeopleController(ApplicationDbContext context)
         {
             _context = context;
-            _configuration = configuration;
         }
         
         [HttpGet]
@@ -44,17 +41,5 @@ namespace api.Controllers
                 Name = person.Entity.Name
             });
         }
-    }
-
-    public class AddPersonContract
-    {
-        [Required,MaxLength(80)]
-        public string Name { get; set; }
-    }
-
-    public class PersonContract
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
     }
 }

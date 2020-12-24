@@ -1,0 +1,13 @@
+﻿@page
+@model frontend.Pages.AddUser
+
+<form method="post">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="form-control" asp-for="Person.Name"/>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+</form>
+

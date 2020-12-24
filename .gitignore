@@ -440,5 +440,5 @@ $RECYCLE.BIN/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-/.tye/process_store
-/.tye/docker_store
+.tye/process_store
+.tye/docker_store
