@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api", "api\api.csproj", "{5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonContracts", "CommonContracts\CommonContracts.csproj", "{46BE6C84-E45D-47E6-9476-D19CB62E32AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blazor", "blazor\blazor.csproj", "{09AD01FC-F6F3-44CD-BF95-D29C5B3E2B2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{46BE6C84-E45D-47E6-9476-D19CB62E32AA}.Release|x64.Build.0 = Release|Any CPU
 		{46BE6C84-E45D-47E6-9476-D19CB62E32AA}.Release|x86.ActiveCfg = Release|Any CPU
 		{46BE6C84-E45D-47E6-9476-D19CB62E32AA}.Release|x86.Build.0 = Release|Any CPU
+		{09AD01FC-F6F3-44CD-BF95-D29C5B3E2B2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09AD01FC-F6F3-44CD-BF95-D29C5B3E2B2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09AD01FC-F6F3-44CD-BF95-D29C5B3E2B2F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{09AD01FC-F6F3-44CD-BF95-D29C5B3E2B2F}.Debug|x64.Build.0 = Debug|Any CPU
+		{09AD01FC-F6F3-44CD-BF95-D29C5B3E2B2F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{09AD01FC-F6F3-44CD-BF95-D29C5B3E2B2F}.Debug|x86.Build.0 = Debug|Any CPU
+		{09AD01FC-F6F3-44CD-BF95-D29C5B3E2B2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09AD01FC-F6F3-44CD-BF95-D29C5B3E2B2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09AD01FC-F6F3-44CD-BF95-D29C5B3E2B2F}.Release|x64.ActiveCfg = Release|Any CPU
+		{09AD01FC-F6F3-44CD-BF95-D29C5B3E2B2F}.Release|x64.Build.0 = Release|Any CPU
+		{09AD01FC-F6F3-44CD-BF95-D29C5B3E2B2F}.Release|x86.ActiveCfg = Release|Any CPU
+		{09AD01FC-F6F3-44CD-BF95-D29C5B3E2B2F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -8,8 +8,16 @@ name: myapp
 services:
 - name: frontend
   project: frontend/frontend.csproj
+  bindings:
+    - protocol: https
 - name: api
   project: api/api.csproj
+  bindings:
+    - protocol: https
+- name: blazor
+  project: blazor/blazor.csproj
+  bindings:
+    - protocol: https
 - name: postgres
   image:  postgres
   env:
