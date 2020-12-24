@@ -14,10 +14,6 @@ services:
   project: api/api.csproj
   bindings:
     - protocol: https
-- name: blazor
-  project: blazor/blazor.csproj
-  bindings:
-    - protocol: https
 - name: postgres
   image:  postgres
   env:
